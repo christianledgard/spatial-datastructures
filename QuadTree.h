@@ -22,6 +22,7 @@ private:
      * @return Retorna referencia al Nodo que contiene o podría contener el punto buscado
      */
     std::shared_ptr<Node>& search(Point target, std::shared_ptr<Node>& node);
+    void recursive_range(Rectangle region, std::shared_ptr<Node> &node_ptr, std::vector<Point> &result_vector);
 
 public:
     QuadTree();
